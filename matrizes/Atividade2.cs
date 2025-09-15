@@ -1,27 +1,28 @@
 using System;
 using minhaBiblioteca;
 
-class ExerciseOne
+class Atividade2
 {
-    static int getMin(int[,] matriz) {
+    static int getMax(int[,] matriz)
+    {
         int linhas = matriz.GetLength(0);
         int cols = matriz.GetLength(1);
 
-        int menor = matriz[0, 0];
+        int maior = matriz[0, 0];
 
         for (int i = 0; i < linhas; i++)
         {
             for (int j = 0; j < cols; j++)
             {
-                if (matriz[i, j] < menor)
+                if (matriz[i, j] > maior)
                 {
-                    menor = matriz[i, j];
+                    maior = matriz[i, j];
                 }
 
             }//fim do for do J
         }//fim do for do i
 
-        return menor;
+        return maior;
 
 
 
@@ -34,13 +35,13 @@ class ExerciseOne
         cols = int.Parse(Console.ReadLine());
         int[,] matriz = new int[linhas, cols];
 
-        biblioteca.gerarMatriz(matriz);
+        Biblioteca.gerarMatriz(matriz);
         //biblioteca.lerMatriz(matriz);
-        biblioteca.escreverMatriz(matriz);
+        Biblioteca.escreverMatriz(matriz);
 
 
 
-        Console.WriteLine("Menor valor: " + getMin(matriz));
+        Console.WriteLine("O maior valor da matriz é: " + getMax(matriz));
 
 
 

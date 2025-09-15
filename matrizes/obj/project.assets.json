@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vivia\\OneDrive\\Documentos\\IF\\Projetos\\tecnica-programacao\\matrizes\\matrizes.csproj",
+      "projectUniqueName": "C:\\Users\\vivia\\OneDrive\\Documentos\\IF\\Projetos\\-ListaDeExerc-cios2_LP\\matrizes\\matrizes.csproj",
       "projectName": "matrizes",
-      "projectPath": "C:\\Users\\vivia\\OneDrive\\Documentos\\IF\\Projetos\\tecnica-programacao\\matrizes\\matrizes.csproj",
+      "projectPath": "C:\\Users\\vivia\\OneDrive\\Documentos\\IF\\Projetos\\-ListaDeExerc-cios2_LP\\matrizes\\matrizes.csproj",
       "packagesPath": "C:\\Users\\vivia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vivia\\OneDrive\\Documentos\\IF\\Projetos\\tecnica-programacao\\matrizes\\obj\\",
+      "outputPath": "C:\\Users\\vivia\\OneDrive\\Documentos\\IF\\Projetos\\-ListaDeExerc-cios2_LP\\matrizes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vivia\\AppData\\Roaming\\NuGet\\NuGet.Config"

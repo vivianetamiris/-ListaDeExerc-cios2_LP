@@ -1,7 +1,7 @@
 using System;
 namespace minhaBiblioteca
 {
-    class biblioteca
+    class Biblioteca
     {
         public static void lerMatriz(int[,] matriz)
     {

@@ -11,9 +11,9 @@ class Program
         cols = int.Parse(Console.ReadLine());
         int[,] matriz = new int[linhas, cols];
 
-        biblioteca.gerarMatriz(matriz);
+        Biblioteca.gerarMatriz(matriz);
         //biblioteca.lerMatriz(matriz);
-        biblioteca.escreverMatriz(matriz);
+        Biblioteca.escreverMatriz(matriz);
 
     }
 }

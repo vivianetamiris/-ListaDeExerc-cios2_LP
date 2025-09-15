@@ -1,32 +1,28 @@
 using System;
 using minhaBiblioteca;
 
-class ExerciseTwo
+class Atividade3
 {
-    static int getMax(int[,] matriz)
+    static int getEqu(int[,] matriz, int equ)
     {
+        int contEqu = 0;
         int linhas = matriz.GetLength(0);
         int cols = matriz.GetLength(1);
-
-        int maior = matriz[0, 0];
 
         for (int i = 0; i < linhas; i++)
         {
             for (int j = 0; j < cols; j++)
             {
-                if (matriz[i, j] > maior)
+                if (matriz[i, j] == equ)
                 {
-                    maior = matriz[i, j];
+                    contEqu++;
                 }
+            }
+        }
 
-            }//fim do for do J
-        }//fim do for do i
-
-        return maior;
-
-
-
+        return contEqu;
     }
+
     static void Main()
     {
         int linhas, cols;
@@ -35,15 +31,13 @@ class ExerciseTwo
         cols = int.Parse(Console.ReadLine());
         int[,] matriz = new int[linhas, cols];
 
-        biblioteca.gerarMatriz(matriz);
-        //biblioteca.lerMatriz(matriz);
-        biblioteca.escreverMatriz(matriz);
+        Biblioteca.gerarMatriz(matriz);
+        Biblioteca.escreverMatriz(matriz);
 
+        Console.WriteLine("Digite o valor que você deseja procurar na matriz: ");
+        int equ = int.Parse(Console.ReadLine());
 
-
-        Console.WriteLine("Maior valor: " + getMax(matriz));
-
-
-
+        int qtd = getEqu(matriz, equ);
+        Console.WriteLine($"O número {equ} aparece {qtd} vezes na matriz.");
     }
 }

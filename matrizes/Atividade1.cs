@@ -1,30 +1,27 @@
 using System;
 using minhaBiblioteca;
 
-class ExerciseThree
+class Atividade1
 {
-    static int getEqu(int[,] matriz)
-    {
-        int contEqu = 0;
+    static int getMin(int[,] matriz) {
         int linhas = matriz.GetLength(0);
         int cols = matriz.GetLength(1);
 
-        Console.WriteLine("Digite o valor que você deseja procurar na matriz: ");
-        int equ = int.Parse(Console.ReadLine()); 
+        int menor = matriz[0, 0];
 
         for (int i = 0; i < linhas; i++)
         {
             for (int j = 0; j < cols; j++)
             {
-                if (matriz[i, j] == equ)
+                if (matriz[i, j] < menor)
                 {
-                    contEqu ++; 
+                    menor = matriz[i, j];
                 }
 
             }//fim do for do J
         }//fim do for do i
 
-        return contEqu;
+        return menor;
 
 
 
@@ -37,13 +34,13 @@ class ExerciseThree
         cols = int.Parse(Console.ReadLine());
         int[,] matriz = new int[linhas, cols];
 
-        biblioteca.gerarMatriz(matriz);
+        Biblioteca.gerarMatriz(matriz);
         //biblioteca.lerMatriz(matriz);
-        biblioteca.escreverMatriz(matriz);
+        Biblioteca.escreverMatriz(matriz);
 
 
 
-        Console.WriteLine("Número de ocorrências: " + getEqu(matriz));
+        Console.WriteLine("O menor valor da matriz é: " + getMin(matriz));
 
 
 
